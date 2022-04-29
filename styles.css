@@ -1,0 +1,78 @@
+:root {
+
+    --lightcyan: hsl(193, 38%, 86%);
+    --neongreen: hsl(150, 100%, 66%);
+    --grayishblue: hsl(217, 19%, 38%);
+    --darkgrayishblue: hsl(217, 19%, 24%);
+    --darkblue: hsl(218, 23%, 16%);
+}
+
+@media(max-width:768px){
+    main {
+        width: 90%;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+    background-color: var(--darkblue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#card {
+    display: flex;
+    align-items: center;
+    background-color: var(--darkgrayishblue);
+    width: 27.35rem;
+    height: 14.42rem;
+    border-radius: 1vw;
+    text-align: center;
+    flex-direction: column;
+    position: relative;
+    padding: 0 2rem;
+}
+
+#advice-id {
+    padding: 2rem 0 1rem;
+    color: var(--neongreen);
+    font-size: 0.5rem;
+    letter-spacing: 0.3rem;
+}
+
+#advice-body {
+    color: var(--lightcyan);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+
+
+#dice {
+    position: absolute;
+    padding: .7rem;
+    border-radius: 50%;
+    background-color: var(--neongreen);
+    border: none;
+    margin-top: 13rem;
+    z-index: 2;
+}
+
+
+
+img {
+    width: 100%;
+}
+
+picture img {
+    margin-bottom: 2rem;
+}
