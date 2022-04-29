@@ -7,12 +7,6 @@
     --darkblue: hsl(218, 23%, 16%);
 }
 
-@media(max-width:768px){
-    main {
-        width: 90%;
-    }
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -27,6 +21,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 #card {
@@ -55,8 +50,6 @@ html {
     margin-bottom: 1rem;
 }
 
-
-
 #dice {
     position: absolute;
     padding: .7rem;
@@ -67,12 +60,20 @@ html {
     z-index: 2;
 }
 
-
-
 img {
     width: 100%;
 }
 
 picture img {
     margin-bottom: 2rem;
+}
+
+@media(max-width:768px){
+    #card {
+        width: 18.35rem;
+        border-radius: 3vw;
+    }
+    #advice-body {
+        font-size: 1rem;
+    }
 }
