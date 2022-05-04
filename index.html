@@ -20,20 +20,18 @@
   </style>
 </head>
 <body onload="getAdvice()">
-  <main>
-    <div id="card">
-      <!-- Advice ID goes here -->
-      <h5 id="advice-id"></h5>
-      <!-- Advice text goes here -->
-      <blockquote id="advice-body"></blockquote>
-
-      <picture>
-        <source media="(min-width: 600px)" srcset="./images/pattern-divider-desktop.svg">
-        <img src="./images/pattern-divider-mobile.svg" alt="pattern divider" style="width: 100%;">
-      </picture>
-
-      <button id="dice" onclick="getAdvice()"><img src="./images/icon-dice.svg" alt="dice icon"></button>
-    </div>
+  <main class="container">
+      <div id="card">
+        <!-- Advice ID goes here -->
+        <h1 id="advice-id"></h1>
+        <!-- Advice text goes here -->
+        <blockquote id="advice-body"></blockquote>
+        <picture>
+          <source media="(min-width: 600px)" srcset="./images/pattern-divider-desktop.svg">
+          <img src="./images/pattern-divider-mobile.svg" alt="pattern divider" class="divider" style="width: 90%;">
+        </picture>
+        <button id="dice" onclick="getAdvice()"><img src="./images/icon-dice.svg" alt="dice icon"></button>
+      </div>
   </main>
   <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 

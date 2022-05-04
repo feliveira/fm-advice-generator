@@ -6,8 +6,7 @@ const getAdvice = () => {
 
     fetch("https://api.adviceslip.com/advice")
     .then(r => r.json())
-    .then(data => advice = data.slip)
-    .then(() => generateAdvice(advice));
+    .then(({slip : advice}) =>  generateAdvice(advice))
 }
 
 const generateAdvice = (advice) =>{
