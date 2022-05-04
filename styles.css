@@ -6,6 +6,12 @@
     --darkblue: hsl(218, 23%, 16%);
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 html {
     height: 100%;
     background-color: var(--darkblue);
@@ -23,8 +29,8 @@ html {
 
 #card {
     margin: 0 auto;
-    border-radius: 0.4em;
-    padding: 2em 1em;
+    border-radius: 0.7em;
+    padding: 2.5em 2em;
     text-align: center;
     background-color: var(--dark-grayish-blue);
     position: relative;
@@ -42,10 +48,12 @@ html {
 
 #advice-body {
     color: var(--lightcyan);
+    font-size: 1.3rem;
+    padding: 1em 0;
 }
 
 .divider {
-    margin-bottom: .8em;
+    margin-bottom: .2em;
 }
 
 #dice {
