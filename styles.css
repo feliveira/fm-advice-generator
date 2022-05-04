@@ -38,6 +38,7 @@ html {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    box-shadow: 5px 20px 20px rgba(0, 0, 0, 0.15);
 }
 
 #advice-id {
@@ -57,6 +58,7 @@ html {
 }
 
 #dice {
+    cursor: pointer;
     position: absolute;
     bottom: 0;
     z-index: 2;
@@ -73,3 +75,8 @@ html {
 #dice img {
     width: 70%;
 } 
+
+#dice:hover {
+    box-shadow: 0px 0px 1.5em var(--neongreen);
+    transition: 0.4s;
+}
